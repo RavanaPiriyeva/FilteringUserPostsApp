@@ -26,7 +26,7 @@ const User = () => {
                     <DropdownMenu dark>
                         {
                             users && users.map((item) => {
-                                return <DropdownItem>
+                                return <DropdownItem key={item.id}>
                                     <option value={item.id} onClick={(e) => setClick(e.target.value)}>{item.name}</option>
                                 </DropdownItem>
                             })
